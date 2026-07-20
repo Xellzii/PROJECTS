@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forms</title>
+</head>
+<body>
+   <main>
+      <h1>Forms demo</h1>
+
+      <form action="/3(forms)/hello.html">
+
+         <h2>Text</h2>
+         <input type="text" placeholder="Enter the text">
+
+         <h2>Password</h2>
+         <input type="password" placeholder="Password">
+
+         <h2>Color</h2>
+         <input type="color" placeholder="Color">
+      </form>
+
+      <br>
+
+      <div>
+         <p>
+            <label for="chees">Do you like chees?</label>
+            <input type="checkbox" id="chees">
+         </p>
+
+         <p>
+            <label for="milk">Do you like milk</label>
+            <input type="checkbox" name="milk" id="milk">
+         </p>
+
+         <p>
+            <label for="username">Enter a username: </label>
+            <input type="text" name="username" id="username" placeholder="Username">
+         </p>
+
+         <p>
+            <label for="password">Enter a password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter the pass">
+         </p>
+
+         <h2>True label:</h2>
+         <p>
+            <label>
+               Enter a number:
+               <input type="number" placeholder="+380*********">
+            </label>
+         </p>
+      </div>
+
+      <hr>
+
+      <div>
+
+         <h2>Search like reddit:</h2>
+         <form action="https://www.reddit.com/search">
+            <label for="q">
+               <h3>Enter "dogs":</h3>
+               <input type="text" name="q" id="username" placeholder="Dogs in Ukraine">
+            </label>
+            <br><br>
+            <button type="submit">SUBMIT</button>
+         </form>
+
+         <hr>
+
+         <h2>Search like google:</h2>
+         <form action="https:/www.google.com/search">
+            <label for="q">
+               <input type="text" name="q" id="q" placeholder="Cats in Australia">
+               <button type="submit">SEARCH</button>
+            </label>
+         </form>
+      </div>
+
+   </main>
+</body>
+</html>
