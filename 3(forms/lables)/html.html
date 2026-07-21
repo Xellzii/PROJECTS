@@ -25,8 +25,8 @@
 
       <div>
          <p>
-            <label for="chees">Do you like chees?</label>
-            <input type="checkbox" id="chees">
+            <label for="cheese">Do you like cheese?</label>
+            <input type="checkbox" id="cheese">
          </p>
 
          <p>
@@ -44,7 +44,7 @@
             <input type="password" name="password" id="password" placeholder="Enter the pass">
          </p>
 
-         <h2>True label:</h2>
+         <h2>Number label:</h2>
          <p>
             <label>
                Enter a number:
@@ -55,9 +55,10 @@
 
       <hr>
 
+      <h2>Search like reddit:</h2>
       <div>
 
-         <h2>Search like reddit:</h2>
+
          <form action="https://www.reddit.com/search">
             <label for="q">
                <h3>Enter "dogs":</h3>
@@ -77,6 +78,88 @@
             </label>
          </form>
       </div>
+
+
+     <h2>Checkboxes</h2>
+     <div>
+
+
+      <form action="/birds">
+         <label for="like_birds">I agree i like birds</label>
+         <input type="checkbox" name="like_birds" id="like_birds" checked value="yes">
+
+         <button type="submit">SUBMIT</button>
+      </form>
+     </div>
+
+     <h2>Radio buttons</h2>
+     <div>
+         <form action="/vegetables">
+            <label for="banana">Banana</label>
+            <input type="radio" name="vegetable" id="banana" value="banana" checked>
+
+            <br>
+
+            <label for="apple">Apple</label>
+            <input type="radio" name="vegetable" id="apple" value="apple">
+
+            <br>
+
+            <label for="coconut">Coconut</label>
+            <input type="radio" name="vegetable" id="coconut" value="coconut">
+
+            <br>
+
+            <p><button type="submit">SUBMIT</button></p>
+         </form>
+     </div>
+
+     <h2>Options</h2>
+     <div>
+
+      <form action="/languages">
+         <label for="language">Select a language:</label>
+         <select name="language" id="language">
+            <option value="uk">Ukrainian</option>
+            <option value="en" selected>English</option>
+            <option value="ch">Chinies</option>
+         </select>
+
+         <p><button type="submit">SUBMIT</button></p>
+      </form>
+
+     </div>
+
+     <h2>Range</h2>
+     <div>
+         <form action="">
+
+            <label for="volume">Volume level:</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" value="20" step="25">
+
+            <button type="submit">SUBMIT</button>
+         </form>
+     </div>
+
+     <h2>Textarea</h2>
+     <div>
+      <label for="textarea">Textarea:</label>
+      <p><textarea cols="50" rows="10" name="textarea" id="textarea" placeholder="Type smth"></textarea></p>
+     </div>
+
+     <h2>Required tag</h2>
+     <div>
+      <form action="/register">
+         <label for="name">Enter your name:</label>
+         <input type="text" placeholder="Your name" name="name" id="name" required minlength="2"></input>
+<br>
+         <label for="password">Enter your password:</label>
+         <input type="password" name="password" id="password" required minlength="8" maxlength="15" placeholder="Your password">
+<br>
+         <button type="submit">SUBMIT</button>
+      </form>
+     </div>
+
 
    </main>
 </body>
