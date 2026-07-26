@@ -1,0 +1,46 @@
+body{
+   background-color: black;
+   color: aliceblue;
+}
+h1{
+   color: red;
+}
+p{
+   color: red;
+}
+/* STYLE BY ID */
+#green{
+   color: green;
+}
+/* STYLE BY CLASS */
+.purple{
+   color: purple;
+}
+footer a{
+   color: aqua;
+   background: gray;
+   border-radius: 40%;
+   text-decoration: none;
+}
+
+h2 + p{
+   color: pink;
+}
+/* daugter class */
+footer > a{
+   color: blue;
+   background: rgb(255, 255, 255);
+   border-radius: 0;
+}
+.reg{
+   color: rgb(0, 225, 255);
+}
+input[type="password"]{
+   color: green;
+}
+form[action*="/register"] {
+   border: 5px dotted cyan;
+   text-align: center;
+   padding-top: 10px;
+}
+
