@@ -1,0 +1,30 @@
+/* EM tag */
+.section{
+    font-size: 60px;
+}
+.h1 {
+    font-size: 1em;
+}
+.lorem {
+    font-size: 0.5em;
+}
+/* REM tag */
+html{
+    font-size: 100px;
+}
+.section-2 h1{
+    font-size: 0.4rem;
+}
+.section-2 p{
+    font-size: 0.2rem;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+    transition:  border-radius 0.5s, background-color 2s;
+}
+.circle:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
