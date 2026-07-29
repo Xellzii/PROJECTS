@@ -1,0 +1,46 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.container{
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column;(напрямок)
+    justify-content: center;(зверху до низу)
+    align-items: center;(зліва направо)
+    flex-wrap: wrap-reverse; (врап)
+    align-content: center;(віддстань між врапами) */
+}
+.container div{
+    width: 200px;
+    height: 200px;
+}
+.container > div:nth-of-type(3){
+    align-self: center; /* (окремий об'єкт) */
+}
+
+/* ------------------------------------------------------ */
+
+.container-2{
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container-2 div{
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
