@@ -25,6 +25,32 @@ h1{
 .container > div:nth-of-type(3){
     align-self: center; /* (окремий об'єкт) */
 }
+.cool-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  border: 5px solid grey;
+  padding: 10px;
+}
+
+.cool-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  bottom: -2px;
+  left: 0;
+  background-color: #2563eb;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.cool-link:hover::after {
+  transform: scaleX(1);
+}
 
 /* ------------------------------------------------------ */
 
